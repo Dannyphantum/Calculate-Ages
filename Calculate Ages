@@ -1,0 +1,52 @@
+
+INPUTS:
+ - Users will input their dates of birth; string of 8 integers(DDMMYYYY)
+ - Users will input whether or not to continue entering ages
+ 
+
+PROCESSES:
+ - Ensure value received is string of 8 integers, userDOB
+ - Determine today's date, currentDate
+ - Subtract userDOB from currentDate, userAge
+  
+
+OUTPUTS:
+ - Prompt user to enter Date of Birth
+ - Display message with userAge included
+ - Prompt user to repeat process or end process
+
+
+ALGORITHM
+
+1. Prompt user for their date of birth.
+2. User enters their date birth.
+3. Date of birth is received, read and stored.
+4. The date of birth is subtracted from the current date; giving the user's age.
+5. The user's age is displayed to the screen with an accompanying message.
+6. Prompt user to decide if more dates will be entered.
+
+
+
+PSEUDOCODE
+
+Initialize userDOB to 0
+Initialize currentDate to Today's Date
+Initialize userAge to 0
+Initialize string userChoice to ""
+
+DOWHILE userChoice is not "N"
+	DOWHILE userDOB is not a positive number
+		DISPLAY "Enter your birthday!"
+	ENDDO
+	
+	currentDate - userDOB = userAge
+	
+	DISPLAY "Client is " + userAge + " years old."
+
+	DISPLAY "Would you like to enter details for another client?"
+	
+ENDDO
+
+DISPLAY "Thanks for using the age calculator!"
+
+
